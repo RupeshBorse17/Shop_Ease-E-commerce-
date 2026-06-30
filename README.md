@@ -1,5 +1,9 @@
 <img width="1902" height="973" alt="SHOP1" src="https://github.com/user-attachments/assets/d3d1730f-b91c-4cf8-9939-14680781fa2d" />
 
+<img width="1920" height="970" alt="shop2" src="https://github.com/user-attachments/assets/1ed5ac23-a4e8-4545-bfde-c2ba208030f0" />
+<img width="1920" height="953" alt="SHOP3" src="https://github.com/user-attachments/assets/a55d28c3-7ba8-4bb1-8cdd-9080e4b5cb37" />
+
+
 
 # 🛒 ShopEase – Full Stack E-Commerce Application
 
