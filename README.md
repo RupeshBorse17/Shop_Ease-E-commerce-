@@ -1,46 +1,144 @@
-🛍️ E-Commerce Platform
-Full-Stack Project | Spring Boot, React.js, PostgreSQL, REST APIs  
-Duration: Jan 2026 – Mar 2026
+# 🛒 ShopEase – Full Stack E-Commerce Application
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📖 Overview
-A full-stack e-commerce application that enables users to browse products, manage carts, and perform keyword-based searches.
-The project demonstrates integration between a Spring Boot backend and a React.js frontend, showcasing RESTful API design, image handling, and database persistence using PostgreSQL.
+ShopEase is a full-stack E-Commerce application built using **React.js**, **Spring Boot**, and **PostgreSQL**. It enables users to browse products, search items, manage a shopping cart, place orders, and view order history through a responsive and user-friendly interface.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-🚀 Features
-Product Management: CRUD operations via Spring Boot REST APIs
+## 🚀 Features
 
-Order Processing: Place and view orders with relational mapping
+- Product CRUD (Add, Update, Delete, View)
+- Product Search & Category Filter
+- Image Upload
+- Shopping Cart (Context API + Local Storage)
+- Order Placement & Order History
+- Automatic Inventory Management
+- Responsive UI with Validation & Toast Notifications
 
-Image Handling: Upload and retrieve product images using MultipartFile
+---
 
-Search Functionality: Keyword-based product search and filtering
+## 🛠 Tech Stack
 
-Frontend Integration: React.js + Axios for seamless API communication
+### Frontend
+- React.js
+- Context API
+- React Router
+- Axios
+- Bootstrap
+- HTML, CSS, JavaScript
 
-Database Management: PostgreSQL with JPA/Hibernate for efficient persistence
+### Backend
+- Java
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- REST APIs
+- Maven
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-*SpringEcomApplication*
- ┣ controller/
- ┃ ┣ ProductController.java
- ┃ ┣ OrderController.java
- ┣ service/
- ┃ ┣ ProductService.java
- ┃ ┣ OrderService.java
- ┣ repo/
- ┃ ┣ ProductRepo.java
- ┃ ┣ OrderRepo.java
- ┣ model/
- ┃ ┣ Product.java
- ┃ ┣ Order.java
- ┃ ┣ OrderItem.java
- ┣ frontend/
- ┃ ┣ src/
- ┃ ┣ components/
- ┃ ┣ pages/
- ┃ ┣ services/
- ┣ application.properties
- ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Database
+- PostgreSQL
+
+### Tools
+- Git
+- GitHub
+- Postman
+- IntelliJ IDEA
+- VS Code
+
+---
+
+## 🏗 Architecture
+
+```
+React UI
+   ↓
+Axios
+   ↓
+Spring Boot REST APIs
+   ↓
+Controller
+   ↓
+Service
+   ↓
+Repository (JPA)
+   ↓
+PostgreSQL
+```
+
+---
+
+## 🗄 Database
+
+**Tables**
+- Product
+- Orders
+- OrderItem
+
+**Relationship**
+
+```
+Orders (1)
+    │
+    ▼
+OrderItem (Many)
+    │
+    ▼
+Product (1)
+```
+
+---
+
+## 📌 REST APIs
+
+### Product
+- GET `/api/products`
+- GET `/api/product/{id}`
+- POST `/api/product`
+- PUT `/api/product/{id}`
+- DELETE `/api/product/{id}`
+- GET `/api/products/search`
+
+### Order
+- POST `/api/orders`
+- GET `/api/orders`
+
+---
+
+## 💡 Key Highlights
+
+- Layered Architecture (Controller → Service → Repository)
+- RESTful API Development
+- Context API State Management
+- Hibernate ORM
+- Inventory Management
+- Clean & Scalable Code
+- Separation of Concerns
+
+---
+
+## 🎯 Learning Outcomes
+
+This project strengthened my skills in:
+
+- Full Stack Development
+- Java & Spring Boot
+- REST API Design
+- React State Management
+- Database Design
+- Hibernate & JPA
+- SQL
+- Git & GitHub
+- Software Architecture
+- Debugging & Problem Solving
+
+- ## 🚀 Future Scope
+
+- User Authentication & Authorization (JWT, Spring Security)
+- Secure Online Payments (Stripe/Razorpay)
+- Wishlist & Favorites
+- Product Reviews & Ratings
+- Admin Dashboard for Product & Order Management
+- Order Tracking & Email Notifications
+- Pagination, Filtering & Sorting
+- Docker Containerization & CI/CD
+- Cloud Deployment (AWS/Azure/Render)
+- Redis Caching for Improved Performance
