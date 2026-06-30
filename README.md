@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="Screenshot (204)" src="https://github.com/user-attachments/assets/44c8857d-c6f8-43c8-9fb2-e60a7bbc12f5" />
 # 🛒 ShopEase – Full Stack E-Commerce Application
 
 ShopEase is a full-stack E-Commerce application built using **React.js**, **Spring Boot**, and **PostgreSQL**. It enables users to browse products, search items, manage a shopping cart, place orders, and view order history through a responsive and user-friendly interface.
